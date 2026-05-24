@@ -32,6 +32,8 @@ async function renderProducts() {
     products = products.filter((product) => product.category === "Chairs");
   } else if (productsFilter === "Skin Care") {
     products = products.filter((product) => product.category === "Skin Care");
+  } else if (productsFilter === 'All') {
+    products = products.filter((product) => product.category === "All");
   }
 
   const productsHTML = products
